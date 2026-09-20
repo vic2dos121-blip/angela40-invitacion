@@ -157,20 +157,22 @@
   }
 
   .acciones {
-    display: flex; flex-direction: column; align-items: center;
-    gap: calc(var(--k) * 10);
+    display: flex; flex-direction: row; flex-wrap: nowrap;
+    align-items: stretch; justify-content: center;
+    gap: calc(var(--k) * 9);
     width: 100%;
   }
   .btn {
     display: inline-flex; align-items: center; justify-content: center;
     gap: calc(var(--k) * 6);
-    padding: calc(var(--k) * 12) calc(var(--k) * 18);
+    padding: calc(var(--k) * 12) calc(var(--k) * 13);
     border-radius: 999px;
-    font-size: calc(var(--k) * 13);
-    font-weight: 600; letter-spacing: .07em; text-transform: uppercase;
+    font-size: calc(var(--k) * 12);
+    font-weight: 600; letter-spacing: .05em; text-transform: uppercase;
     text-decoration: none; border: 1px solid transparent;
     text-shadow: none;
-    width: min(100%, calc(var(--k) * 232));
+    white-space: nowrap;
+    flex: 0 1 auto;
     -webkit-tap-highlight-color: transparent;
   }
   .btn svg { flex: none; width: calc(var(--k) * 14); height: calc(var(--k) * 14); }
